@@ -1,0 +1,41 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <title>Number Guessing Game</title> 
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head> 
+  
+<body> 
+<h1>Welcome to my Guess The Number game!</h1> 
+  
+<p>Guess a random number between 1 and 100.</p> 
+  
+<div class="form"> 
+    <label for="guessField">Enter a guess: </label> 
+    <input type = "text" id = "guessField" class = "guessField"> 
+    <input type = "submit" value = "Submit guess" 
+           class = "guessSubmit" id = "submitguess"> 
+</div> 
+<div class='popup' id='win'>
+			<div class='popup_content'>
+				<h1>You guessed the number!</h1>
+				<p id='seconds_to_spare'>Your guesses: 0
+        <br />
+        <div class="button">
+      <button onclick='restart()'>Play again</button>
+    </div>
+			</div>
+		</div>
+		<div class='popup2' id='lose'>
+			<div class='popup_content2'>
+				<h1>Aww... You lost!</h1>
+				<p>You didn't guess the number in 5 guesses!</p>
+			</div>
+		</div>
+  
+<script src="script.js""> 
+ 
+</script> 
+</body> 
+</html>
